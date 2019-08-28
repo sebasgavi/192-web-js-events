@@ -1,31 +1,12 @@
-
-.list__elem:nth-child(n+6){
-    background: gray;
+.mainheader{
+    border: 2px solid blue;
+    transition: border .4s ease;
 }
 
-p{
+.mainheader--active{
+    border: 10px solid green;
+}
+
+.mainnav__item--open{
     color: red;
-}
-
-p::before{
-    content: '$';
-}
-
-p::after{
-    content: ' después';
-}
-
-p:first-child{
-    /*transition-property: all;
-    transition-duration: .3s;
-    transition-timing-function: cubic-bezier(.24,-0.51,.87,1.53);*/
-    transition: transform 2s 1s ease, background-color .4s linear;
-}
-p:first-child:hover{
-    transform: translate(20px, 0px);
-    background-color: blue;
-}
-
-div, section{
-    border: 2px solid red;
 }
